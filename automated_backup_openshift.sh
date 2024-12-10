@@ -15,7 +15,7 @@ MOUNT_POINT="/mnt/backup-openshift-etcd"      # Punto de montaje local para el F
 
 #Configuración OpenShift Container Platform
 
-OC_SERVER="https://api.contenedores.nube-mintic.gov.co:6443"
+OC_SERVER="API SERVER OPENSHIFT"
 OC_TOKEN=$(cat /opt/scripts/oc_token)
 
 
