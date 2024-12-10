@@ -1,16 +1,16 @@
 #!/bin/bash
 
 # Configuración
-#NODES=("contenedores-rt8zs-master-0" "contenedores-rt8zs-master-1" "contenedores-rt8zs-master-2")
-NODES=("contenedores-rt8zs-master-0")
+#NODES=("NODE MASTER 1" "NODE MASTER 2" "NODE MASTER 3")
+NODES=("NODE MASTER 1")
 BACKUP_DIR="/home/core/assets/backup"
 DATE=$(date +"%Y-%m-%d_%H%M")
 LOG_FILE="/var/log/backup_files.log"  # Archivo para registrar nombres generado
 
 # Configuración de Azure File Share
-AZURE_STORAGE_ACCOUNT="cnt4lro"               # Nombre de la cuenta de almacenamiento
+AZURE_STORAGE_ACCOUNT="STORAGE ACCOUNT NAME"  # Nombre de la cuenta de almacenamiento
 AZURE_FILE_SHARE="backup-openshift-etcd"      # Nombre del File Share
-AZURE_STORAGE_KEY="PMcBMTXc79dPKuTuZwlEjnq2+jJ5FIBQMUGjYhWDmRv7dUSNqerLESQRGmvdQJ5+9+AbGbRS+qtCZYb3zFLhHg=="      # Clave de acceso de la cuenta
+AZURE_STORAGE_KEY="YOUR TOKEN"                # Token de acceso de la cuenta
 MOUNT_POINT="/mnt/backup-openshift-etcd"      # Punto de montaje local para el File Share
 
 #Configuración OpenShift Container Platform
