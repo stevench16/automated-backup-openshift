@@ -1,3 +1,4 @@
+env > /var/log/cron_env.log
 #!/bin/bash
 
 # Configuración
